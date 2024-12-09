@@ -24,8 +24,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <title>Generative Densification</title>
+  <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -43,6 +43,18 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+
+  <!-- Comparison -->
+  <script type="text/javascript">WebFont.load({ google: { families: ["Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic", "Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic", "Ubuntu:300,300italic,400,400italic,500,500italic,700,700italic", "Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic", "Changa One:400,400italic", "Varela Round:400", "Bungee Shade:regular", "Roboto:300,regular,500", "Bungee Outline:regular"] } });</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="./static/script.js" type="text/javascript"></script>
+  
+  <script src="./static/js/dics.original.js"></script>
+  <link rel="stylesheet" href="./static/css/bootstrap-4.4.1.css">
+
+  <link rel="stylesheet" href="./static/css/dics.original.css">
+  <script src="./static/js/dics.original.js"></script>
+  <script src="./static/js/event_handler.js"></script>
 </head>
 <body>
 
@@ -52,236 +64,248 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">Generative Densification</h1>
+            <h2 class="title is-4 publication-title">Learning to Densify Gaussians for High-Fidelity Generalizable 3D Reconstruction</h2>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
-
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
+                <a href="https://scholar.google.com/citations?user=8NKPmmwCmrAC&hl=ko&oi=ao" target="_blank">Seungtae Nam</a><sup>*</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=VLzxTrAAAAAJ&hl=ko&oi=ao" target="_blank">Xiangyu Sun</a><sup>*</sup>,
+              </span>
+              <span class="author-block">
+                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Gyeongjin Kang</a>,
+              </span>
+              <span class="author-block">
+                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Younggeun Lee</a>,
+              </span>
+              <span class="author-block">
+                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Seungjun Oh</a>,
+              </span>
+              <span class="author-block">
+                <a href="https://silverbottlep.github.io/" target="_blank">Eunbyung Park</a>
+              </span>
+            </div>
+            <!-- Affiliation -->
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                Sungkyunkwan University
+              </span>
+              <span class="eql-cntrb">
+                <small><br><sup>*</sup>Equal Contribution
+              </span>
+            </div>
+            <!-- Link -->
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
                     </span>
-
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
+                    <span>
+                      Paper
+                    </span>
+                  </a>
+                </span>
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/stnamjef/GenerativeDensification" target="_blank" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Code</span>
+                    <span>
+                      Code
+                    </span>
                   </a>
                 </span>
-
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
-        </div>
+  <!-- Teaser -->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="static/images/teaser.jpg" alt="MY ALT TEXT"/>
+        <hr>
+        <video autoplay controls muted loop height="100%">
+          <source src="static/videos/teaser.mp4">
+        </video>
+          <h2 class="subtitle is-6 has-text-justified">
+            Our method selectively densifies (a) coarse Gaussians from generalized feed-forward models. 
+            (c) The top K Gaussians with large view-space positional gradients are selected, and (d-e) their fine Gaussians are generated in each layer. 
+            (g) The final Gaussians are obtained by combining (b) the remaining (non-selected) Gaussians with (f) the union of each layer's Gaussians.
+          </h2>
       </div>
     </div>
-  </div>
-</section>
-<!-- End paper abstract -->
+  </section>
+  <!-- End Teaser -->
 
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Generalized feed-forward Gaussian models have achieved significant progress in sparse-view 3D reconstruction by leveraging prior knowledge from large multi-view datasets.
+              However, these models often struggle to represent high-frequency details due to the limited number of Gaussians.
+              While the densification strategy used in per-scene 3D Gaussian splatting (3D-GS) optimization can be adapted to the feed-forward models, it may not be ideally suited for generalized scenarios.
+              In this paper, we propose Generative Densification, an efficient and generalizable method to densify Gaussians generated by feed-forward models.
+              Unlike the 3D-GS densification strategy, which iteratively splits and clones raw Gaussian parameters, our method up-samples feature representations from the feed-forward models and generates their corresponding fine Gaussians in a single forward pass, leveraging the embedded prior knowledge for enhanced generalization.
+              Experimental results on both object-level and scene-level reconstruction tasks demonstrate that our method outperforms state-of-the-art approaches with comparable or smaller model sizes, achieving notable improvements in representing fine details.
+            </p>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End youtube video -->
+  </section>
+  <!-- End paper abstract -->
 
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
+  <!-- Method Overview -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Method Overview</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <img src="static/images/method_overview.jpg" class="center">
+          <h2 class="subtitle is-6 has-text-justified" style="padding-top: 10px;">
+            Our method selectively densifies coarse Gaussians generated by feed-forward Gaussian models:
+            <ol style="padding-top: 10px; padding-left:40px; text-indent:10px">
+              <li>
+                The top K coarse Gaussians with large view-space positional gradients are selected.
+              </li>
+              <li>
+                The selected Gaussians are processed through the densification module to generate fine Gaussians.
+              </li>
+              <li>
+                The final Gaussians are obtained by combining the fine Gaussians with the remaining coarse Gaussians.
+              </li>
+            </ol>
+          </h2>
         </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
       </div>
     </div>
   </section>
-<!--End paper poster -->
+  <!-- End Method Overview -->
 
+  <hr>
 
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Object-level Reconstcution</h2>
+
+      <!-- Object-level Reconstruction -->
+      <h3 class="title is-4" style="padding-top: 20px;">Comparisons against LaRa</h3>
+      <ul class="nav nav-tabs nav-fill nav-justified" id="object-scale-recon">
+        <li class="nav-item">
+          <a class="nav-link active" onclick="objectSceneEvent(0)">Gobjaverse-1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="objectSceneEvent(1)">Gobjaverse-2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="objectSceneEvent(2)">GSO-1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="objectSceneEvent(3)">GSO-2</a>
+        </li>
+      </ul>
+      <div class="b-dics" style="width: 1250px; font-weight: 600;">
+        <img src="static/images/gobjaverse_1_gt.jpg" alt="GT">
+        <img src="static/images/gobjaverse_1_lara.jpg" alt="LaRa">
+        <img src="static/images/gobjaverse_1_ours.jpg" alt="Ours">
+        <img src="static/images/gobjaverse_1_coarse.jpg" alt="Coarse Gauss.">
+        <img src="static/images/gobjaverse_1_fine.jpg" alt="Fine Gauss.">
+      </div>
+      <!-- End Object-level Reconstruction -->
+
+      <!-- Video Results (GSO) -->
+      <h2 class="title is-4" style="padding-top: 60px;">Video Results (Gobjaverse)</h2>
+      <video poster="" id="video1" autoplay controls muted loop height="100%">
+        <source src="static/videos/gobjaverse.mp4"
+        type="video/mp4">
+      </video>
+      <!-- End Video Results (GSO) -->
+
+      <br><br>
+
+      <!-- Video Results (GSO) -->
+      <h2 class="title is-4" style="padding-top: 50px;">Video Results (Google Scanned Object)</h2>
+      <video poster="" id="video1" autoplay controls muted loop height="100%">
+        <source src="static/videos/gso.mp4"
+        type="video/mp4">
+      </video>
+      <!-- End Video Results (GSO) -->
     </div>
-</section>
-<!--End BibTex citation -->
+  </section>
+
+  <hr>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Scene-level Reconstcution</h2>
+
+      <!-- Scene-level Reconstruction -->
+      <h3 class="title is-4" style="padding-top: 20px;">Comparisons against MVSplat</h3>
+      <ul class="nav nav-tabs nav-fill nav-justified" id="scene-scale-recon">
+        <li class="nav-item">
+          <a class="nav-link active" onclick="sceneSceneEvent(0)">RE10K-1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="sceneSceneEvent(1)">RE10K-2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="sceneSceneEvent(2)">RE10K-3</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="sceneSceneEvent(3)">RE10K-4</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="sceneSceneEvent(4)">RE10K-5</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="sceneSceneEvent(5)">RE10K-6</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="sceneSceneEvent(6)">RE10K-7</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="sceneSceneEvent(7)">RE10K-8</a>
+        </li>
+      </ul>
+      <div class="b-dics scene-dics" style="width: 1250px; font-weight: 600;">
+        <img src="static/images/re10k_1_gt.jpg" alt="GT">
+        <img src="static/images/re10k_1_mvsplat.jpg" alt="MVSplat">
+        <img src="static/images/re10k_1_ours.jpg" alt="Ours">
+      </div>
+      <!-- End Scene-level Reconstruction -->
+
+      <!-- Additional Scene-level Reconstruction -->
+      <h3 class="title is-4" style="padding-top: 60px;">Additional Comparisons</h3>
+      <img src="static/images/re10k_all.jpg" class="center">
+      <!-- End Additional Scene-level Reconstruction -->
+    </div>
+  </section>
+
+  <hr>
+
+  <!--BibTex citation -->
+    <!-- <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <h2 class="title">BibTeX</h2>
+        <pre><code>BibTex Code Here</code></pre>
+      </div>
+  </section> -->
+  <!--End BibTex citation -->
 
 
   <footer class="footer">
@@ -291,9 +315,8 @@
         <div class="content">
 
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
           </p>
 
         </div>
@@ -308,5 +331,5 @@
 
     <!-- End of Statcounter Code -->
 
-  </body>
-  </html>
+</body>
+</html>
