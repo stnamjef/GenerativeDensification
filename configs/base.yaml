@@ -1,0 +1,140 @@
+gpu_id: [0,1,2,3]
+
+exp_name: Generative-Densification/release
+n_views: 4
+
+model:
+
+    encoder_backbone: 'vit_base_patch16_224.dino' # ['vit_small_patch16_224.dino','vit_base_patch16_224.dino']
+
+    n_groups: [16]  # n_groups for local attention
+    n_offset_groups: 32     # offset radius of 1/n_offset_groups of the scene size
+
+    K: 1    # primitives per-voxel
+    sh_degree: 1    # view dependent color
+
+    num_layers: 12
+    num_heads: 16
+
+    view_embed_dim: 32
+    embedding_dim: 256
+
+    vol_feat_reso: 16
+    vol_embedding_reso: 32
+
+    vol_embedding_out_dim: 80
+
+    ckpt_path: null # specify a ckpt path if you want to continue training  
+
+    # For Point Decoder 
+    k_num: 12_000
+    order:
+      - z
+      - z-trans
+      - hilbert
+      - hilbert-trans
+    stride:
+      - 2
+      # - 2
+    dec_depths:
+      - 2
+      - 2
+      # - 2
+    dec_channels:
+      - 160
+      - 256
+      # - 256
+    dec_num_head:
+      - 20
+      - 32
+      # - 32
+    dec_patch_size:
+      - 48
+      - 48
+      # - 48
+    mlp_ratio: 4
+    qkv_bias: True
+    qk_scale: null
+    attn_drop: 0.0
+    proj_drop: 0.0
+    drop_path: 0.3
+    pre_norm: True
+    shuffle_orders: True
+    enable_rpe: False
+    enable_flash: True
+    upcast_attention: False
+    upcast_softmax: False
+    pdnorm_bn: False
+    pdnorm_ln: False
+    pdnorm_decouple: True
+    pdnorm_adaptive: False
+    pdnorm_affine: True
+    pdnorm_conditions:
+      - ScanNet
+      - S3DIS
+      - Structured3D
+    # affine
+    bnnorm_affine: False
+    lnnorm_affine: False
+    # global pooling
+    enable_ada_lnnorm: True
+    # upscale block
+    upscale_factor:
+      - 2
+      - 4
+      # - 4
+    n_frequencies: 15
+    enable_absolute_pe: False
+    enable_upscale_drop_path: True
+    # mask block, ratio as 1.0 means turn off masking
+    use_mask: True
+    temperature: 1.0
+    non_leaf_ratio:
+      - 0.8
+      # - 1.0
+    mask_sampling_type: topk
+    # gaussian head
+    enable_residual_attribute: False # True
+
+
+
+train_dataset:
+    dataset_name: gobjeverse
+    data_root: ../LaRa/dataset/gobjaverse/gobjaverse.h5
+
+    split: train
+    img_size: [512,512] # image resolution
+    n_group: ${n_views}   # image resolution
+    n_scenes: 3000000
+    load_normal: True
+
+test_dataset:
+    dataset_name: gobjeverse
+    data_root: ../LaRa/dataset/gobjaverse/gobjaverse.h5
+
+    split: test
+    img_size: [512,512]
+    n_group: ${n_views}
+    n_scenes: 3000000
+    load_normal: True
+
+train:
+    batch_size: 3
+    lr: 4e-4
+    beta1: 0.9
+    beta2: 0.95
+    weight_decay: 0.05
+    # betas: [0.9, 0.95]
+    warmup_iters: 1000
+    n_epoch: 30
+    limit_train_batches: 0.2
+    limit_val_batches: 0.02
+    check_val_every_n_epoch: 1
+    start_fine: -1 # 1000
+    use_rand_views: False
+test:
+    batch_size: 3
+
+logger: 
+    name: wandb
+    dir: ./log
