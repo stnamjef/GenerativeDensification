@@ -30,3 +30,8 @@
   </div>
   <h3 align="center">Code will be released soon!</h3>
 </p>
+
+## Checkpoints
+
+For Generative Densification Object checkpoints, we provide two versions (w/ residual and w/o redisual) model, including both fast (30 epochs) and full (50 epochs) model.
+We provide the checkpoints on [hugging-face](https://huggingface.co/Xiang12yu/GDM-object/tree/main).
