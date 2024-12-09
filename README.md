@@ -20,11 +20,11 @@
   <a href="https://stnamjef.github.io/GenerativeDensification/">Project Page</a> |
   <a >Chekpoints</a> 
   </h3>
-  <figure style="padding-top: 20px; padding-bottom: 20px;">
   <img src="./assets/teaser.jpg" style="width: 100%;">
-  <figcaption style="text-align: justify">
-    Our method selectively densifies (a) coarse Gaussians from generalized feed-forward models. (c) The top K Gaussians with large view-space positional gradients are selected, and (d-e) their fine Gaussians are generated in each layer. (g) The final Gaussians are obtained by combining (b) the remaining (non-selected) Gaussians with (f) the union of each layer's Gaussians.
-  </figcaption>
-  </figure>
+  <p style="line-height:1.25; text-align: justify;">
+    Our method selectively densifies (a) coarse Gaussians from generalized feed-forward models. 
+    (c) The top K Gaussians with large view-space positional gradients are selected, and (d-e) their fine Gaussians are generated in each layer. 
+    (g) The final Gaussians are obtained by combining (b) the remaining (non-selected) Gaussians with (f) the union of each layer's Gaussians.
+  </p>
   <h3 align="center">Code will be released soon!</h3>
 </p>
