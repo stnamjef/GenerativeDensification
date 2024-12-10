@@ -540,7 +540,7 @@ class Network(L.LightningModule):
                 )
 
             if self.enable_residual_attribute:
-                print('We use residual!')
+                # print('We use residual!')
                 # head
                 dec.add(
                     GaussianResModule(
@@ -568,7 +568,7 @@ class Network(L.LightningModule):
                     name="mask"
                 )
             else:
-                print('We do not use residual!')
+                # print('We do not use residual!')
                 # mask module
                 dec.add(
                     MaskModule(
