@@ -1,2 +1,2 @@
 # GenerativeDensification
-Source code of Generative Densification
+Generative Densification project page
