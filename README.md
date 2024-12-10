@@ -53,7 +53,7 @@ pip3 install ./third_party/diff-gaussian-rasterization
 
 ## Datasets
 * Our object-level model is trained on Gobjaverse training set, provided by [LaRa](https://github.com/autonomousvision/LaRa?tab=readme-ov-file#dataset).
-* You can download our processed Co3D dataset [here](https://huggingface.co/datasets/Xiang12yu/Co3D/tree/main).
+* We do cross-dataset generalization on GSO and Co3D dataset. You can download our preprocessed Co3D dataset [here](https://huggingface.co/datasets/Xiang12yu/Co3D/tree/main).
 * Note: 
   * The Gobjaverse dataset requires 1.4TB of storage.
   * We assume the datasets are in the `./GenerativeDensification/dataset`.
