@@ -99,6 +99,7 @@ We thank all the authors for making their amazing works publicly available.
 * [MVSplat360](https://github.com/donydchen/mvsplat360)
 * [SplatterImage](https://github.com/szymanowiczs/splatter-image)
 * [AbsGS](https://github.com/TY424/AbsGS)
+* [diff-gaussian-rasterization](https://github.com/ashawkey/diff-gaussian-rasterization)
 
 ## Citation
 ```bibtex
