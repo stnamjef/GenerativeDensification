@@ -7,7 +7,7 @@
     &nbsp;·&nbsp;
     <a href="https://scholar.google.com/citations?user=VLzxTrAAAAAJ&hl=ko&oi=ao">Xiangyu Sun*</a>
     &nbsp;·&nbsp;
-    <a href="https://github.com/Gynjn">Gyungjin Kang</a>
+    <a href="https://github.com/Gynjn">Gyeongjin Kang</a>
     &nbsp;·&nbsp;
     <a href="https://github.com/Younggeun-L">Younggeun Lee</a>
     &nbsp;·&nbsp;
@@ -20,18 +20,66 @@
   <a href="https://stnamjef.github.io/GenerativeDensification/">Project Page</a> |
   <a href="https://huggingface.co/Xiang12yu/GDM-object/tree/main">Checkpoints</a> 
   </h3>
-  <div style="padding-top: 20px; padding-bottom: 20px;">
-  <img src="./assets/teaser.jpg" style="width: 100%;">
-  <p style="line-height:1.25; text-align: justify; margin-top: 5px; margin-bottom: 5px">
-    Our method selectively densifies (a) coarse Gaussians from generalized feed-forward models. 
-    (c) The top K Gaussians with large view-space positional gradients are selected, and (d-e) their fine Gaussians are generated in each layer. 
-    (g) The final Gaussians are obtained by combining (b) the remaining (non-selected) Gaussians with (f) the union of each layer's Gaussians.
-  </p>
-  </div>
-  <h3 align="center">Code will be released soon!</h3>
+  <div style="padding-top: 5px;"></div>
 </p>
 
-## Checkpoints
+|![teaser](./assets/teaser.jpg)|
+|:--:|
+| *Our method selectively densifies coarse Gaussians generate by generalized feed-forward models* |
 
-For Generative Densification Object checkpoints, we provide two versions (w/ residual and w/o redisual) model, including both fast (30 epochs) and full (50 epochs) model.
-We provide the checkpoints on [hugging-face](https://huggingface.co/Xiang12yu/GDM-object/tree/main).
+<!-- ## Installation
+```
+docker build -t generative_densification:0.0.1 -f Dockerfile .
+docker run -it -v $(pwd):/workspace --gpus all --ipc host --name generative_densification generative_densification:0.0.1
+``` -->
+
+## Datasets
+* Our object-level model is trained on Gobjaverse training set, provided by [LaRa](https://github.com/autonomousvision/LaRa?tab=readme-ov-file#dataset).
+* Note: 
+  * The Gobjaverse dataset requires 1.4TB of storage.
+  * We assume the datasets are in the `./GenerativeDensification/dataset`.
+
+```shell
+GenerativeDensification
+├── dataLoader
+├── dataset
+│   ├── gobjaverse
+│   │   ├── gobjaverse_part_01.h5
+│   │   ...
+│   │
+│   ├── google_scanned_objects
+│   │   ├── 2_of_Jenga_Classic_Game
+│   │   ...
+│   ...
+├── lightning
+...
+```
+
+## Training
+* You can enable residual learning by setting `model.enable_residual_attribute=True`.
+```
+python train_lightning.py \
+train_dataset.data_root=./dataset/gobjaverse/gobjaverse.h5 \
+test_dataset.data_root=./dataset/gobjaverse/gobjaverse.h5 \
+model.enable_residual_attribute=False
+```
+
+## Evaluation
+* We provide two [checkpoints](https://huggingface.co/Xiang12yu/GDM-object/tree/main) (w/ residual learning and w/o it) for our object-level models.
+* Note: 
+  * The checkpoint 'epoch=49.ckpt' corresponds to 'Ours' model in the paper.
+  * The checkpoint 'epoch=49_residual.ckpt' corresponds to 'Ours (w/ residual)' model in the paper.
+```
+python eval_all.py
+```
+
+## Acknowledgements
+Our work is built upon the following projects.
+We thank all the authors for making their amazing works publicly available.
+* [LaRa](https://github.com/autonomousvision/LaRa)
+* [MVSplat](https://github.com/donydchen/mvsplat)
+* [MVSplat360](https://github.com/donydchen/mvsplat360)
+* [SplatterImage](https://github.com/szymanowiczs/splatter-image)
+* [AbsGS](https://github.com/TY424/AbsGS)
+
+<!-- ## Citation -->
