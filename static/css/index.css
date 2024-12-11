@@ -1,7 +1,7 @@
 body {
   /* font-family: 'Noto Sans', sans-serif; */
-  /* font-family:'Times New Roman', Times, serif; */
-  font-family: 'Helvetica', 'Arial', sans-serif;
+  /* font-family: 'Helvetica', 'Arial', sans-serif; */
+  font-family: "Libre Baskerville", serif;
 }
 
 
@@ -27,8 +27,8 @@ body {
 
 .teaser {
   /* font-family: 'Google Sans', sans-serif; */
-  /* font-family:'Times New Roman', Times, serif; */
-  font-family: 'Helvetica', 'Arial', sans-serif;
+  /* font-family: 'Helvetica', 'Arial', sans-serif; */
+  font-family: "Libre Baskerville", serif;
 }
 
 
@@ -52,15 +52,15 @@ body {
 }
 
 .publication-title {
-    /* font-family: 'Google Sans', sans-serif; */
-  /* font-family:'Times New Roman', Times, serif; */
-  font-family: 'Helvetica', 'Arial', sans-serif;
+  /* font-family: 'Google Sans', sans-serif; */
+  /* font-family: 'Helvetica', 'Arial', sans-serif; */
+  font-family: "Libre Baskerville", serif;
 }
 
 .publication-authors {
-    /* font-family: 'Google Sans', sans-serif; */
-  /* font-family:'Times New Roman', Times, serif; */
-  font-family: 'Helvetica', 'Arial', sans-serif;
+   /* font-family: 'Google Sans', sans-serif; */
+  /* font-family: 'Helvetica', 'Arial', sans-serif; */
+  font-family: "Libre Baskerville", serif;
 }
 
 .publication-venue {
@@ -141,5 +141,25 @@ body {
   font-size: smaller;
 }
 
+.title-gradient { 
+  background-image: linear-gradient(135deg, #5335cf 0%, #de005e 25%, #f66e48 50%, #de005e 75%, #5335cf 100%);
+  -webkit-background-clip: text; 
+  background-clip: text; 
+  color: transparent;
+  background-size: 400% auto;  
+  animation: gradientMove 3s ease-in-out infinite alternate;
+}
+  
+@keyframes gradientMove {    
+  to{
+    background-position: 50%; 
+  }
+}
 
+.table a {
+  color: black;
+}
 
+.table {
+  font-size: 1em;
+}
