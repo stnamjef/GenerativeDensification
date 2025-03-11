@@ -18,7 +18,7 @@
   <h3 align="center">
   <a href="https://arxiv.org/abs/2412.06234">Paper</a> | 
   <a href="https://stnamjef.github.io/GenerativeDensification/">Project Page</a> |
-  <a href="https://huggingface.co/Xiang12yu/GDM-object/tree/main">Checkpoints</a> 
+  <a href="https://huggingface.co/Xiang12yu/GDM-scene/tree/main">Checkpoints</a> 
   </h3>
   <div style="padding-top: 5px;"></div>
 </p>
