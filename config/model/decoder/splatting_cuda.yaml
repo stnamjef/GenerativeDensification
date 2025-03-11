@@ -1,0 +1,25 @@
+name: splatting_cuda
+
+# point decoder
+stride: [2, 2, 2] # (2, 2),
+dec_depths: [2, 2, 2] # (2, 2, 2),
+dec_channels: [320, 256, 128] # (320, 256, 128),
+dec_num_head: [40, 32, 16] # (40, 16, 32),
+dec_patch_size: [48, 48, 48] # (48, 48, 48),
+mlp_ratio: 4
+qkv_bias: True
+# global pooling
+enable_ada_lnnorm: True
+# upscale block
+upscale_factor: [2, 2, 2] # (1, 2, 2)
+n_frequencies: 15
+enable_absolute_pe: False
+enable_upscale_drop_path: True
+# mask block
+non_leaf_ratio: [0.5, 0.8, 0.8] # (1.0, 1.0)
+# decoder grid size
+grid_size: 0.01
+# gaussian head
+sh_degree: 4
+# enable_residual_attribute: True
+k_num: 30_000  # 12_000
