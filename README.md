@@ -2,6 +2,7 @@
   <h1 align="center">
   Generative Densification: Learning to Densify Gaussians <br> for High-Fidelity Generalizable 3D Reconstruction
   </h1>
+  <h3 align="center">CVPR 2025 (Highlight)</h3>
   <p align="center">
     <a href="https://github.com/stnamjef">Seungtae Nam*</a>
     &nbsp;·&nbsp;
